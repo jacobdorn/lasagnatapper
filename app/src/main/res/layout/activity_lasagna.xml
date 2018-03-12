@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lschrameyer716.lasagnatapper2032.LasagnaActivity">
+
+    <TextView
+        android:id="@+id/lasagnaAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/LasagnaSchoolButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="sckol"
+        android:text="@string/lasagnasckol" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:onClick="lasagnaOnClick"
+        android:src="@drawable/lasagna" />
+
+    <Button
+        android:id="@+id/Lasagnacolegbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="coleg"
+        android:text="@string/lasagnacoleg" />
+
+    <TextView
+        android:id="@+id/sckolCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LasagnaSchoolButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/colegCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Lasagnacolegbutton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="27dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="showShop"
+        android:text="Shop" />
+
+</RelativeLayout>
